@@ -13,8 +13,10 @@ w0_est = w(imax);
 sigma = sqrt(pmax);
 H = @(lambda, w) (2*lambda*w0_est*pmax).^2./((w0_est.^2-w.^2).^2 + (2*lambda*w0_est*sigma).^2); 
 lambda_est = lsqcurvefit(H, 1, w', pxx');
-disp('\lambda = ' + string(lambda_est));
 
+disp('sigma = ' + string(sigma));
+disp('lambda_est = ' + string(lambda_est));
+disp('w0_est = ' + string(w0_est));
 
 plot(w,H(lambda_est, w));
 hold on;
