@@ -19,5 +19,3 @@ bode(Hpd*Hship);
 
 load('../../data/p3b.mat');
 ts=ans;
-
-

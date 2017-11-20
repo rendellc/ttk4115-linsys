@@ -1,12 +1,12 @@
 Model {
-  Name			  "ship"
+  Name			  "ship_p1"
   Version		  8.9
   SavedCharacterEncoding  "windows-1252"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.33"
+    ComputedModelVersion    "1.34"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -43,7 +43,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-7.0, 0.0, 974.0, 1047.0]
+      Location		      [572.0, 4.0, 974.0, 1047.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -115,9 +115,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "rendellc"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Nov 02 15:38:05 2017"
-  RTWModifiedTimeStamp	  431537884
-  ModelVersionFormat	  "1.%<AutoIncrement:33>"
+  LastModifiedDate	  "Thu Nov 09 10:12:57 2017"
+  RTWModifiedTimeStamp	  432122055
+  ModelVersionFormat	  "1.%<AutoIncrement:34>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -169,11 +169,11 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    8
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "ship"
+    model_		    "ship_p1"
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "ship"
+      Cell		      "ship_p1"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -1150,8 +1150,8 @@ Model {
     }
   }
   System {
-    Name		    "ship"
-    Location		    [-7, 0, 967, 1047]
+    Name		    "ship_p1"
+    Location		    [572, 4, 1546, 1051]
     Open		    on
     PortBlocksUseCompactNotation off
     ModelBrowserVisibility  off
@@ -1766,7 +1766,7 @@ Model {
       }
       System {
 	Name			"Cargo ship"
-	Location		[8, 8, 1944, 1184]
+	Location		[-7, 0, 967, 1047]
 	Open			on
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
@@ -2642,7 +2642,7 @@ Model {
       Ports		      [1]
       Position		      [595, -35, 655, -5]
       ZOrder		      168
-      Filename		      "../data/p3b.mat"
+      Filename		      "../data/p1.mat"
       SaveFormat	      "Timeseries"
     }
     Block {
