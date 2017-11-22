@@ -42,7 +42,7 @@ C = [0  1   1   0   0];
 Q = [30    0    ;
       0     1e-6];
 
-%% Discretizing CT model using Van Loan's method
+%% Discretizing CT model using Van Loan's method and c2d
 
 M = expm( [A              E*Q*(E.'); 
             zeros(size(A)) -A.'     ] .*Ts);
@@ -63,9 +63,7 @@ Bd  = N12;
 [Ad, Ed] = c2d(A,E,Ts);
 
 %% Variance of measurement noise
-d = load('../data/p5_var_measurement.mat');
-d = d.ans;
-
+d = load('../data/p5_var_measurement.mat'); d = d.ans;
 R = var(d.Data(:));
 Rd = R/Ts;
 
